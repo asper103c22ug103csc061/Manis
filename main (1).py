@@ -1,8 +1,19 @@
-num1 = 1.5
-num2 = 6.3
+class Player:
+    def play(self):
+        print("The player is playing cricket.")
 
-# Add two numbers
-sum = num1 + num2
+class Batsman(Player):
+    def play(self):
+        print("The batsman is batting.")
 
-# Display the sum
-print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+class Bowler(Player):
+    def play(self):
+        print("The bowler is bowling.")
+
+# Create objects of Batsman and Bowler classes
+batsman = Batsman()
+bowler = Bowler()
+
+# Call the play() method for each object
+batsman.play()
+bowler.play()
